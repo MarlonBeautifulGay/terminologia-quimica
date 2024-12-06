@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="/CSS/main.css">
+        <link rel="icon" href="/IMG/AtomoIcon.png">
+        <script src="https://kit.fontawesome.com/c7d652bcba.js" crossorigin="anonymous"></script>
+        <title>Sobre os Compostos</title>
+    </head>
+    <body class="bg-dark">
+        
+        <header class="fw-bold overflow-auto d-flex justify-content-between sticky-top" style="height: 10vh;" id="main-header">
+
+            <div>
+                <a href="/JS/index.html">
+                    <img src="/IMG/AtomoIcon.png" alt="..." title="Início" class="shadow-lg h-100" id="Atomo">
+                </a>
+                <h2 class="mx-3 d-inline fst-italic">
+                    TERMINOLOGIA QUÍMICA 
+                </h2>
+            </div>
+
+            <div id="top-nav" style="float: right;">
+
+                <a href="/JS/index.html" title="Início">Início</a>
+                <a href="/JS/sobre-dicionario.html" title="Sobre o Dicionário">Sobre o Dicionário</a>
+                <a href="/JS/pesquisa.html" title="Pesquisa">Pesquisa</a>
+                <a href="/JS/fale-conosco.html" title="Fale Conosco">Fale Conosco</a>
+                <a href="tabela-periodica.html" title="Tabéla Periódica">
+                    <i class="fa fa-atom me-2"></i>
+                </a>
+                
+            </div>
+
+        </header>
+
+        <button class="btn bg-dark text-light position-fixed border border-2 border-black d-flex flex-column" id="playButton">
+            <i class="fa fa-arrow-circle-o-left" onclick="goBack()" title="Voltar"></i>
+            <br>
+            <i class="fa fa-play" onclick="speak()" title="Ler página"></i>
+        </button>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+        <br><br>
+        
+        <div class="d-flex justify-content-center">
+            <div class="container rounded p-3 mx-2 mt-2 bg-dark text-center lh-lg banner">
+
+                <hr>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <h2>⚛️ Sobre os Compostos Químicos ⚛️</h2>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <span>
+                        <a href="#resumo" title="Química: Compostos Químicos \\ Dynâmicon">🎬 Resumo e vídeo sobre compostos 🎬</a>
+                    </span>
+                </div>
+
+                <br>
+                <hr>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <h2>&bull; O Que São Compostos Químicos &bull;</h2>
+                </div>
+                
+                <p>
+                    Os compostos químicos são substâncias formadas por dois ou mais <a href="/Terminologias/E/elementos.html">elementos</a> químicos diferentes que se combinam em proporções fixas e definidas. Eles são essenciais para a química e para a nossa vida cotidiana, constituindo desde a água que bebemos até os medicamentos que tomamos.
+                </p>
+
+                <br>
+                <hr>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <h2>&bull; Como se Formam os Compostos Químicos? &bull;</h2>
+                </div>
+
+                <p>
+                    A formação de um composto químico ocorre por meio de reações químicas, nas quais <a href="/Terminologias/A/atomos.html">átomos</a> de diferentes elementos se unem. Esses átomos se ligam entre si através de ligações químicas, que podem ser do tipo iônica, covalente ou metálica.
+                </p>
+
+                <br>
+                <hr>
+                <br>
+                
+                <div class="d-flex justify-content-center">
+                    <ul>
+                        <hr>
+                        <li>
+                            <b>Ligações Iônicas:</b><br> Ocorrem quando um átomo doa um ou mais elétrons para outro átomo, formando íons com cargas opostas que se atraem mutuamente. Um exemplo comum é o cloreto de sódio (NaCl), o sal de cozinha, onde o sódio (Na) doa um elétron para o cloro (Cl).
+                        </li>
+                        <br>
+                        <hr>
+                        <li>
+                            <b>Ligações Covalentes:</b><br> Formam-se quando dois átomos compartilham pares de elétrons. Um exemplo é a <a href="/Terminologias/M/moleculas.html">molécula</a> de água (H₂O), onde o oxigênio (O) compartilha elétrons com dois átomos de hidrogênio (H).
+                        </li>
+                        <br>
+                        <hr>
+                        <li>
+                            <b>Ligações Metálicas:</b><br> Envolvem um mar de elétrons livres que se movem ao redor de núcleos atômicos positivos, como no caso dos metais. Esses tipos de ligações conferem propriedades como a condutividade elétrica e a maleabilidade aos metais.
+                        </li>
+
+                        <hr>
+
+                        <br>
+                        
+                    </ul>
+                    
+                </div>
+                <br>
+                
+                <div class="d-flex justify-content-center">
+                    <h2 id="resumo">Resumo</h2>
+                </div>
+
+                <p id="resumoTexto">
+                    Os compostos químicos são blocos de construção essenciais da matéria. Sua diversidade e complexidade tornam a química uma área fascinante e crucial para entender o mundo ao nosso redor. Através do estudo dos compostos químicos, podemos desenvolver novas tecnologias, melhorar a qualidade de vida e explorar as maravilhas da ciência.
+                </p>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <span><a href="https://www.youtube.com/watch?v=gUVgB4n0qPQ" target="_blank"><i class="fa fa-youtube-play"></i> Os Compostos Químicos:</a></span>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <iframe class="video" width="1310" height="493" src="https://www.youtube.com/embed/gUVgB4n0qPQ" title="Química: Compostos Químicos \\ Dynâmicon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <br><br><br><br>
+
+        <footer class="text-light fst-italic font-monospace fw-bold" id="main-footer">
+
+            <div class="d-flex justify-content-between text-center fw-bold">
+                <div class="d-flex justify-content-center">
+                    <img src="/IMG/etec.png" alt="..." title="Etec Escola Técnica Estadual" class="mt-2" style="height: 14vh;">
+                    <img src="/IMG/cps-logo.png" alt="..." title="Etec Escola Técnica Estadual" style="height: 14vh;">
+                </div>
+                <p>Dicionário Bibliográfrico <br> Terminologia Química</p>
+            </div>
+
+            <span class="d-flex justify-content-between">
+
+                <div class="text-center mt-3 mx-3" style="width: 15%;">
+                    <p>
+                        O conteúdo deste site pode ser utilizado para todos os fins não comerciais, respeitados e reservados
+                        os direitos morais dos autores.
+                    </p>
+                </div>
+
+                <ul class="mx-3" id="footer-ul">
+                    <li>
+                         <a href="/JS/fale-conosco.html" title="Fale Conosco">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a href="/JS/politica-de-privacidade.html" title="Política de Privacidade">Política de Privacidade</a>
+                    </li>
+                </ul>
+
+            </span>
+
+            <div class="text-center">
+
+                <h3>Desenvolvido por:</h3>
+
+                <p>
+                    <b>&copy; Kauã Padin</b>
+                    <br>
+                    <b>&copy; Kainã Igor</b>
+                </p>
+                
+            </div>
+
+        </footer>
+
+
+        <script src="/JS/script.js"></script>
+    </body>
+</html>

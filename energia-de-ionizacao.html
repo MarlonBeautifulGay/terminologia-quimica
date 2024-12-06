@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="/CSS/main.css">
+        <link rel="icon" href="/IMG/AtomoIcon.png">
+        <script src="https://kit.fontawesome.com/c7d652bcba.js" crossorigin="anonymous"></script>
+        <title>Sobre a Energia de Ionização</title>
+    </head>
+    <body class="bg-dark">
+        
+        <header class="fw-bold overflow-auto d-flex justify-content-between sticky-top" style="height: 10vh;" id="main-header">
+
+            <div>
+                <a href="/JS/index.html">
+                    <img src="/IMG/AtomoIcon.png" alt="..." title="Início" class="shadow-lg h-100" id="Atomo">
+                </a>
+                <h2 class="mx-3 d-inline fst-italic">
+                    TERMINOLOGIA QUÍMICA 
+                </h2>
+            </div>
+
+            <div id="top-nav" style="float: right;">
+
+                <a href="/JS/index.html" title="Início">Início</a>
+                <a href="/JS/sobre-dicionario.html" title="Sobre o Dicionário">Sobre o Dicionário</a>
+                <a href="/JS/pesquisa.html" title="Pesquisa">Pesquisa</a>
+                <a href="/JS/fale-conosco.html" title="Fale Conosco">Fale Conosco</a>
+                <a href="tabela-periodica.html" title="Tabéla Periódica">
+                    <i class="fa fa-atom me-2"></i>
+                </a>
+                
+            </div>
+
+        </header>
+
+        
+        <button class="btn bg-dark text-light position-fixed border border-2 border-black d-flex flex-column" id="playButton">
+            <i class="fa fa-arrow-circle-o-left" onclick="goBack()" title="Voltar"></i>
+            <br>
+            <i class="fa fa-play" onclick="speak()" title="Ler página"></i>
+        </button>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+        <br><br>
+        
+        <div class="d-flex justify-content-center">
+            <div class="container rounded p-3 mx-2 mt-2 bg-dark text-center lh-lg banner">
+
+                <hr>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <h2>&nbsp;⚛️ Sobre a Energia de Ionização ⚛️&nbsp;</h2>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <span>
+                        <a href="#resumo" title="Energia de ionização - Brasil Escola">🎬 Resumo e vídeo sobre energia de ionização 🎬</a>
+                    </span>
+                </div>
+                <br>
+                <hr>
+                
+                <br>
+                <div class="d-flex justify-content-center">
+                    <h2>&nbsp;&bull; O que é a energia de ionização &bull;&nbsp;</h2>
+                </div>
+                <p>
+                    Energia necessária para remover um elétron de um <a href="/Terminologias/A/atomos.html">átomo</a> ou íon no estado gasoso.
+                </p>
+                <br>
+                <hr>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <h2>&nbsp;&bull; Unidade de Medida &bull;&nbsp;</h2>
+                </div>
+                <p>
+                    Geralmente medida em elétron-volts (eV) ou quilojoules por mol (kJ/mol).
+                </p>
+                <br>
+                <hr>
+                <br>
+                
+                <div class="d-flex justify-content-center">
+                    <h2>&nbsp;&bull; Primeira Energia de Ionização &bull;&nbsp;</h2>
+                </div>
+                <p>
+                    Refere-se à energia necessária para remover o primeiro elétron de um átomo neutro.
+                </p>
+                <br>
+                <hr>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <h2>&nbsp;&bull; Tendências na Tabela Periódica &bull;&nbsp;</h2>
+                </div>
+                <ul>
+                    <hr>
+                    <li><b>Aumenta:</b> Da esquerda para a direita em um período.</li>
+                    <hr>
+                    <li><b>Diminui:</b> De cima para baixo em um grupo.</li>
+                    <hr>
+                </ul>
+                <br>
+                <hr>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <h2>&nbsp;&bull; Fatores que Influenciam &bull;&nbsp;</h2>
+                </div>
+                <ul>
+                    <hr>
+                    <li><b>Raio Atômico:</b> Menor raio atômico = maior energia de ionização.</li>
+                    <hr>
+                    <li><b>Carga Nuclear Efetiva:</b> Maior carga nuclear efetiva = maior energia de ionização.</li>
+                    <hr>
+                    <li><b>Configuração Eletrônica:</b> Átomos com configurações eletrônicas estáveis têm maior energia de ionização.</li>
+                    <hr>
+                </ul>
+                <br>
+                <hr>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <h2>&nbsp;&bull; Sucessivas Energias de Ionização &bull;&nbsp;</h2>
+                </div>
+                <p>
+                    Remover elétrons subsequentes requer mais energia, pois a atração entre o núcleo e os elétrons restantes aumenta.
+                </p>
+                <br>
+                <hr>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <h2 id="resumo">Resumo</h2>
+                </div>
+                <p id="resumoTexto">
+                    A energia de ionização é a energia necessária para remover um elétron de um átomo no estado gasoso. Ela varia conforme a posição do elemento na tabela periódica, aumentando ao longo de um período e diminuindo em um grupo. Átomos com menores raios atômicos e maior carga nuclear efetiva possuem maior energia de ionização. A remoção de elétrons adicionais requer energias cada vez maiores.
+                </p>
+                <br>
+                <hr>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <span><a href="https://www.youtube.com/watch?v=IaHxWAkFLhs" target="_blank"><i class="fa fa-youtube-play"></i> A Energia de Ionização:</a></span>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <iframe class="video" width="1310" height="493" src="https://www.youtube.com/embed/IaHxWAkFLhs" title="Energia de ionização - Brasil Escola" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <hr>
+
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <br><br><br><br>
+
+        <footer class="text-light fst-italic font-monospace fw-bold" id="main-footer">
+
+            <div class="d-flex justify-content-between text-center fw-bold">
+                <div class="d-flex justify-content-center">
+                    <img src="/IMG/etec.png" alt="..." title="Etec Escola Técnica Estadual" class="mt-2" style="height: 14vh;">
+                    <img src="/IMG/cps-logo.png" alt="..." title="Etec Escola Técnica Estadual" style="height: 14vh;">
+                </div>
+                <p>Dicionário Bibliográfrico <br> Terminologia Química</p>
+            </div>
+
+            <span class="d-flex justify-content-between">
+
+                <div class="text-center mt-3 mx-3" style="width: 15%;">
+                    <p>
+                        O conteúdo deste site pode ser utilizado para todos os fins não comerciais, respeitados e reservados
+                        os direitos morais dos autores.
+                    </p>
+                </div>
+
+                <ul class="mx-3" id="footer-ul">
+                    <li>
+                         <a href="/JS/fale-conosco.html" title="Fale Conosco">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a href="/JS/politica-de-privacidade.html" title="Política de Privacidade">Política de Privacidade</a>
+                    </li>
+                </ul>
+
+            </span>
+
+            <div class="text-center">
+
+                <h3>Desenvolvido por:</h3>
+
+                <p>
+                    <b>&copy; Kauã Padin</b>
+                    <br>
+                    <b>&copy; Kainã Igor</b>
+                </p>
+                
+            </div>
+
+        </footer>
+
+        <script src="/JS/script.js"></script>
+    </body>
+</html>

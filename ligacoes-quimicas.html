@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="/CSS/main.css">
+        <link rel="icon" href="/IMG/AtomoIcon.png">
+        <script src="https://kit.fontawesome.com/c7d652bcba.js" crossorigin="anonymous"></script>
+        <title>Sobre as Ligações Químicas</title>
+    </head>
+    <body class="bg-dark">
+        
+        <header class="fw-bold overflow-auto d-flex justify-content-between sticky-top" style="height: 10vh;" id="main-header">
+            <div>
+                <a href="/JS/index.html">
+                    <img src="/IMG/AtomoIcon.png" alt="..." title="Início" class="shadow-lg h-100" id="Atomo">
+                </a>
+                <h2 class="mx-3 d-inline fst-italic">
+                    TERMINOLOGIA QUÍMICA 
+                </h2>
+            </div>
+
+
+            <div id="top-nav" >
+
+                <a href="/JS/index.html" title="Início">Início</a>
+                <a href="/JS/sobre-dicionario.html" title="Sobre o Dicionário">Sobre o Dicionário</a>
+                <a href="/JS/pesquisa.html" title="Pesquisa">Pesquisa</a>
+                <a href="/JS/fale-conosco.html" title="Fale Conosco">Fale Conosco</a>
+                <a href="tabela-periodica.html" title="Tabéla Periódica">
+                    <i class="fa fa-atom me-2"></i>
+                </a>
+                
+            </div>
+
+        </header>
+
+        <button class="btn bg-dark text-light position-fixed border border-2 border-black d-flex flex-column" id="playButton">
+            <i class="fa fa-arrow-circle-o-left" onclick="goBack()" title="Voltar"></i>
+            <br>
+            <i class="fa fa-play" onclick="speak()" title="Ler página"></i>
+        </button>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+        <br><br><br><br>
+        
+        
+        <div class="d-flex justify-content-center">
+            <div class="container rounded p-3 mx-2 mt-2 bg-dark text-center lh-lg banner">
+                
+                <hr>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <h2>&nbsp;⚛️ Sobre as Ligações Químicas ⚛️&nbsp;</h2>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <span>
+                        <a href="#resumo" title="Ligações Químicas - Brasil Escola">🎬 Resumo e vídeo sobre ligações químicas 🎬</a>
+                    </span>
+                </div>
+
+                <br>
+                <hr>
+                
+                <br><br>
+                <div class="d-flex justify-content-center">
+                    <h2>&bull; O Que é a Ligação Química &bull;</h2>
+                </div>
+
+                <ul class="d-flex justify-content-center">
+                    <li>Uma ligação química é uma força que mantém <a href="/Terminologias/A/atomos.html">átomos</a> juntos em uma <a href="/Terminologias/M/moleculas.html">molécula</a> ou <a href="/Terminologias/C/compostos.html">composto</a>, formando uma unidade estável.</li>
+
+                    <img src="/IMG/ligacoes-quimicas.png" alt="..." title="Imagem Modelos Atômicos">
+                </ul>
+              
+
+                <br>
+                <hr>
+                <br>
+
+
+                <div class="d-flex justify-content-center">
+                    <h2>&bull; Tipos Principais de Ligações Químicas &bull;</h2>
+                </div>
+
+                <ul>
+                    <li class="fw-bold">Ligação Covalente:</li>
+                    <ul>
+                        <hr>
+                        <li>Átomos compartilham pares de elétrons.</li>
+                        <hr>
+                        <li>Pode ser simples, dupla ou tripla.</li>
+                        <hr>
+                        <li>Exemplos: H₂O (água), CO₂ (dióxido de carbono).</li>
+                        <hr>
+                    </ul>
+                    <br>
+                    <li class="fw-bold">Ligação Iônica:</li>
+                    <ul>
+                        <hr>
+                        <li>Um átomo doa elétrons para outro átomo.</li>
+                        <hr>
+                        <li>Resulta na formação de íons positivos e negativos que se atraem.</li>
+                        <hr>
+                        <li>Exemplos: NaCl (cloreto de sódio), KBr (brometo de potássio).</li>
+                        <hr>
+                    </ul>
+                    <br>
+                    <li class="fw-bold">Ligação Metálica:</li>
+                    <ul>
+                        <hr>
+                        <li>Átomos em um metal compartilham elétrons de forma deslocalizada.</li>
+                        <hr>
+                        <li>Cria uma "nuvem" de elétrons que se movem livremente.</li>
+                        <hr>
+                        <li>Exemplos: Fe (ferro), Cu (cobre).</li>
+                        <hr>
+                    </ul>
+                </ul>
+
+                <br>
+                <hr>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <h2>&bull; Forças Intermoleculares &bull;</h2>
+                </div>
+                <ul>
+                    <hr>
+                    <li>Forças de Van der Waals: Interações fracas entre moléculas neutras.</li>
+                    <hr>
+                    <li>Ligações de Hidrogênio: Interações específicas entre átomos de hidrogênio e átomos altamente <a href="/Terminologias/E/eletronegatividade.html">eletronegativos</a> (como O, N, F).</li>
+                    <hr>
+                    <li>Forças Dipolo-Dipolo: Interações entre moléculas polares.</li>
+                    <hr>
+                </ul>
+                
+                <br>
+                <hr>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <h2>&bull; Energia de Ligação &bull;</h2>
+                </div>
+                <ul>
+                    <hr>
+                    <li>A energia necessária para romper uma ligação química.</li>
+                    <hr>
+                    <li>Quanto maior a energia de ligação, mais forte é a ligação.</li>
+                    <hr>
+                </ul>
+
+                <br>
+                <hr>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <h2>&bull; Importância das Ligações Químicas &bull;</h2>
+                </div>
+                <ul>
+                    <hr>
+                    <li>Determinam as propriedades físicas e químicas das substâncias.</li>
+                    <hr>
+                    <li>Influenciam a estrutura e a reatividade dos compostos químicos.</li>
+                    <hr>
+                </ul>
+                <br>
+                <hr>
+                <br>
+                
+                
+                <br>
+                <hr>
+                <br>
+
+
+                <div class="d-flex justify-content-center">
+                    <h2 id="resumo">Resumo</h2>
+                </div>
+
+                <p id="resumoTexto">
+                    Uma ligação química é uma força que mantém átomos unidos em moléculas e compostos, formando unidades estáveis. Existem três tipos principais: covalente (compartilhamento de elétrons), iônica (transferência de elétrons) e metálica (compartilhamento de elétrons em uma "nuvem" deslocalizada). Além disso, forças intermoleculares como as forças de Van der Waals, ligações de hidrogênio e forças dipolo-dipolo influenciam como as moléculas interagem entre si. A energia de ligação é crucial para determinar a estabilidade e a força das ligações químicas. Estas ligações são fundamentais para a estrutura e propriedades das substâncias químicas.
+                </p>
+                <br>
+                <hr>
+                <br>
+
+
+                <div class="d-flex justify-content-center">
+                    <span><a href="https://www.youtube.com/watch?v=S6PcueZI_h4" target="_blank"><i class="fa fa-youtube-play"></i> As Ligações Químicas:</a></span>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <iframe class="video" width="1310" height="493" src="https://www.youtube.com/embed/S6PcueZI_h4" title="Ligações Químicas - Brasil Escola" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <hr>
+                
+
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <br><br><br><br>
+
+        <footer class="fst-italic font-monospace fw-bold" id="main-footer">
+
+            <div class="d-flex justify-content-between text-center fw-bold">
+                <div class="d-flex justify-content-center">
+                    <img src="/IMG/etec.png" alt="..." title="Etec Escola Técnica Estadual" class="mt-2" style="height: 14vh;">
+                    <img src="/IMG/cps-logo.png" alt="..." title="Etec Escola Técnica Estadual" style="height: 14vh;">
+                </div>
+                <p>Dicionário Bibliográfrico <br> Terminologia Química</p>
+            </div>
+
+            <span class="d-flex justify-content-between">
+
+                <div class="text-center mt-3 mx-3 font-monospace fw-bold" style="width: 15%;">
+                    <p>
+                        O conteúdo deste site pode ser utilizado para todos os fins não comerciais, respeitados e reservados
+                        os direitos morais dos autores.
+                    </p>
+                </div>
+
+                <ul class="mx-3" id="footer-ul">
+                    <li>
+                         <a href="/JS/fale-conosco.html" title="Fale Conosco">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a href="/JS/politica-de-privacidade.html" title="Política de Privacidade">Política de Privacidade</a>
+                    </li>
+                </ul>
+
+            </span>
+
+            <div class="text-center">
+
+                <h3>Desenvolvido por:</h3>
+
+                <p>
+                    <b>&copy; Kauã Padin</b>
+                    <br>
+                    <b>&copy; Kainã Igor</b>
+                </p>
+                
+            </div>
+
+        </footer>
+
+
+        <script src="/JS/script.js"></script>
+    </body>
+</html>

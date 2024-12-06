@@ -1,0 +1,582 @@
+:root {
+    --gradient-body: linear-gradient(
+        #021c50,
+        #2c1e89
+    );
+    --gradient-banner: radial-gradient(
+        #0d1453,
+        #0d2551
+    );
+    --gradient-text-link: linear-gradient(
+        white,
+        #255fff
+    );
+    --gradient-text-active: linear-gradient(
+        #2eabf3cb,
+        #6e23f8
+    );
+    --gradient-pesquisa: linear-gradient(
+        #ff8080,
+        #4d71ff
+    );
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.8vw !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: #d1d1d1;
+    overflow: auto;
+    background: var(--gradient-body) no-repeat;
+    background-size: 300%;
+}
+
+header {
+    border-bottom: .2vw solid black;
+    margin-bottom: 2vw;
+    font-size: 1.8vw;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+h2, h1 {
+    text-shadow: .2vw .2vw 0px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    border-top: .2vw solid black;
+    margin-top: 5vw;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+footer, header {
+    background: #080f36;
+    width: 100vw;
+    padding: .5vw;
+    transition: all .25s ease-in-out;
+}
+
+ul li::before {
+    content: '• ';
+}
+
+@keyframes grad-move {
+    from {background-position: left;}
+    to {background-position: right;}
+}
+
+hr {
+    color: rgba(0, 0, 0, 0.603);
+}
+
+header h2, #header-pesquisa {
+    cursor: default;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+header h2::before {
+    content: '📖';
+}   
+
+header h2::after {
+    content: '™';
+}
+
+#footer-ul li::before {
+    content: '';
+}
+
+#footer-ul a {
+    color: transparent;
+    background: var(--gradient-text-link) no-repeat;
+    background-position: 300%;
+    background-clip: text;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    transition: all 0.25s ease-in-out;
+}
+
+#top-nav a, #top-nav span {
+    color: transparent;
+    background: var(--gradient-text-link) no-repeat;
+    background-position: 300%;
+    background-clip: text;
+    font-weight: bolder;
+    margin: .345vw;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+#navBar a[id="active-page"] {
+    color: cornflowerblue;
+    font-weight: bolder;
+}
+
+#top-nav a[id="active-page"], #footer-ul a[id="active-page"], #top-nav span[id="active-page"] {
+    color: transparent;
+    background: var(--gradient-text-active) no-repeat;
+    background-position: 300%;
+    background-clip: text;
+    border-bottom: solid 2px #6e23f8;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    padding-bottom: 3px;
+}
+
+#Atomo {
+    float: left;
+    border: .1vw black solid;
+    border-radius: 15px;
+    animation: Atomo-Anim alternate infinite  ease-in-out 2s;
+    transition: all 0.25s ease-in-out;
+}
+
+@keyframes Atomo-Anim {
+    from {transform: none;}
+    to {transform: rotateY(175deg);}
+}
+
+#header-pesquisa {
+    background: var(--gradient-pesquisa) no-repeat;
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+    text-align: center;
+}
+
+.banner h2, #index-banner h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.banner h2 {
+    cursor: default;
+}
+
+.banner ol {
+    width: 90%;
+}
+
+.banner h2, .banner p, .banner ul, .banner ol, .banner span {
+    padding: .7vw;
+    background: #23222f;
+    border-radius: .4vw;
+    border: .2vw black solid;
+}
+
+.banner, #index-banner {
+    box-shadow: 0px .4vw 1.2vw black;
+}
+
+.banner {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, round;
+    width: 95.5vw;
+    height: fit-content;
+    color: #d1d1d1;
+    border: .221vw solid black;
+    background: var(--gradient-banner) no-repeat;
+    background-size: 300%;
+}
+
+.banner img {
+    border: .4vw rgba(0, 0, 0, 0.2) solid;
+    border-radius: .4vw;
+    transition: all 0.25s ease-in-out;
+    min-width: 20vw;
+    max-width: 25vw;
+    transition: all .25s ease-in-out;
+}
+
+.banner * {
+    overflow: auto;
+}
+
+.banner a, 
+#index-banner a {
+    text-decoration: none;
+    cursor: pointer;
+    color: transparent;
+    background: var(--gradient-text-link) no-repeat;
+    background-clip: text;
+    font-weight: bolder;
+    transition: all 0.25s ease-in-out;
+}
+
+#playButton, #playButton * {
+    z-index: 9999;
+    transition: all .25s ease-in-out;
+}
+
+a:hover, a:focus, #top-nav span:focus, #top-nav span:hover, #Atomo:hover, #Atomo:focus, #playButton i:hover, #playButton i:focus {
+    opacity: 50%;
+}
+
+input[type="search"] {
+    border: .2vw black solid;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: all 0.25s ease-in-out;
+}
+
+input[type="search"]:hover, #search_icon:hover, input[type="search"]:focus, #search_icon:focus {
+    background: #cfcfcf;
+    box-shadow: .2vw .2vw 10px rgba(0, 0, 0, 0.2);
+}
+
+#search_icon {
+    border: .2vw black solid;
+    border-radius: 10px;
+    padding: 2px 10px;
+    transition: all 0.25s ease-in-out;
+}
+
+#audioTrackBtn {
+    transition: all .25s ease-in-out;
+}
+
+#navBar {
+    max-width: 90vw;
+}
+
+#navBar a {
+    text-decoration: none;
+    color: #d1d1d1;
+    font-weight: bold;
+    border: .2vw #0E1116 solid;
+    border-radius: .4vw;
+    padding: .3vw;
+    margin-left: .1vw;
+    margin-right: .1vw;
+    background: #212529;
+    transition: all 0.25s ease-in-out;
+}
+
+#navBar a:hover, #navBar a:focus {
+    color: #0055c4;
+    opacity: 100%;
+}
+
+#resumo::before {
+    content: '📄 ';
+}
+
+#resumo::after {
+    content: ' 📄';
+}
+
+.w-18 {
+    width: 18vw;
+}
+
+.w-80 {
+    width: 90vw;
+}
+
+.pesquisa h2 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    color: white;
+    display: inline;
+    transition: all 0.25s ease-in-out;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.pesquisa a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: transparent;
+    background: var(--gradient-text-link) no-repeat;
+    background-clip: text;
+    transition: all 0.25s ease-in-out;
+}
+
+.video {
+    width: 50vw;
+}
+
+.video {
+    border: .4vw rgba(0, 0, 0, 0.2) solid;
+    border-radius: 10px;
+    transition: all 0.25s ease-in-out;
+}
+
+th#txtTh{
+    position: absolute;
+    background-color: #e7e6e6;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 540px;
+    height: 33px;
+    left: 140px;
+    border: none;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#txt{ 
+    display: flex;
+    position: absolute;
+    background-color: #e7e6e6;
+    color: black;
+    width: 540px;
+    height: 120px;
+    left: 140px;
+    top: 58px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 16px;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+    border: none;
+}
+
+div#icone{
+    position: relative;
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px #3131316c;
+    text-align: center;
+    padding: 10px;
+    font-size: 65px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+}
+
+p#indice{
+    font-size: 1.5vw !important;
+}
+
+div#icone {
+    font-size: 2vw !important;
+}
+
+span#informativo{
+    width: 400px;
+    margin-left:16px;
+    font-size: 14px;
+    overflow: auto;
+}
+
+table#principal{
+    position: relative;
+    background-color: rgba(96, 184, 255, 0.493);
+    color: rgba(0, 0, 0, 0.726);
+    width: 1060px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+table[id="principal"] p{
+    position: absolute;
+    font-size: 10px;
+    font-weight: 100;
+    left: 4px;
+    top: 3px;
+}
+
+table[id="principal"] td{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    display:inline-block;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    margin-left: 8px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    font-size: large !important;
+    transition: all .25s ease-in-out;
+}
+
+table[id="principal"] td:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    animation: tada 1s alternate infinite ease-in-out;
+}
+
+table[id="principal"] td p {
+    font-size: small !important;
+}
+
+@keyframes tada {
+    from {filter: none;}
+    to {filter: grayscale(2); backdrop-filter: blur(10px);}
+}
+
+section#legenda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.295);
+    width: 1050px;
+    height: 135px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div.quadrado{
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    margin-right: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.822);
+    padding-top: 16px;
+    margin-right: 20px;
+    letter-spacing: 1px;
+}
+
+.outros{
+    color: white;
+    font-size: 10px;
+    padding: 4px;
+    text-align: left;
+    border: none;
+}
+
+.oculto{
+    visibility: hidden;
+}
+
+.invisivel{
+    display: none;
+}
+
+.animacao{
+    animation:tada;
+    animation-duration: 2s;
+}
+
+.animacaoLegenda{
+    animation:heartBeat;
+    animation-duration: 3s;
+}
+
+/*Cores da Legenda*/
+div#nao-metais{
+    background-color: #A1D344;
+}
+
+div#metais-alcalinos{
+    background-color: #F1B32E;
+}
+
+div#metais-alcalino-terrosos{
+    background-color: #EADA2F;
+}
+
+div#metais-de-transicao{
+    background-color: #EB8E8E;
+}
+
+div#semimetais{
+    background-color: #4FB6AC;
+}
+
+div#outros-metais{
+    background-color: #A2C7D3;
+}
+
+div#halogenios{
+    background-color: #70CBEB;
+}
+
+div#gases-nobres{
+    background-color: #3D9EE3;
+}
+
+div#lantanideos{
+    background-color: #90E3E9;
+}
+
+div#actinidios{
+    background-color: #DCADD6;
+}
+
+/*Cores das classes dos elementos*/
+.nao-metal{
+    background-color: #A1D344;
+}
+
+.metal-alcalino{
+    background-color: #F1B32E;
+}
+
+.metal-alcalino-terroso{
+    background-color: #EADA2F;
+}
+
+.metal-de-transicao{
+    background-color: #EB8E8E;
+}
+
+.semimetais{
+    background-color: #4FB6AC;
+}
+
+.outro-metal{
+    background-color: #A2C7D3;
+}
+
+.halogenio{
+    background-color: #70CBEB;
+}
+
+.gas-nobre{
+    background-color: #3D9EE3;
+}
+
+.lantanideos{
+      background-color: #90E3E9;
+}
+
+.actinidios{
+    background-color: #DCADD6;
+}
+
+.bg-translucent {
+    background: rgba(0, 0, 0, 0.562) !important;
+    backdrop-filter: blur(4px) !important;
+}
+
+/*Mudar a barra de rolagem*/
+html {
+    scrollbar-width: 0.6vw 0.6vh;
+    scroll-behavior: smooth !important;
+    scrollbar-color: #0f0f0f #1f1f1f;
+}
+

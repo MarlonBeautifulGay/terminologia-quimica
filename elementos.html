@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="/CSS/main.css">
+        <link rel="icon" href="/IMG/AtomoIcon.png">
+        <script src="https://kit.fontawesome.com/c7d652bcba.js" crossorigin="anonymous"></script>
+        <title>Sobre os Elementos</title>
+    </head>
+    <body class="bg-dark">
+        
+        <header class="fw-bold overflow-auto d-flex justify-content-between sticky-top" style="height: 10vh;" id="main-header">
+
+            <div>
+                <a href="/JS/index.html">
+                    <img src="/IMG/AtomoIcon.png" alt="..." title="Início" class="shadow-lg h-100" id="Atomo">
+                </a>
+                <h2 class="mx-3 d-inline fst-italic">
+                    TERMINOLOGIA QUÍMICA 
+                </h2>
+            </div>
+
+            <div id="top-nav" style="float: right;">
+
+                <a href="/JS/index.html" title="Início">Início</a>
+                <a href="/JS/sobre-dicionario.html" title="Sobre o Dicionário">Sobre o Dicionário</a>
+                <a href="/JS/pesquisa.html" title="Pesquisa">Pesquisa</a>
+                <a href="/JS/fale-conosco.html" title="Fale Conosco">Fale Conosco</a>
+                <a href="tabela-periodica.html" title="Tabéla Periódica">
+                    <i class="fa fa-atom me-2"></i>
+                </a>
+                
+            </div>
+
+        </header>
+
+        <button class="btn bg-dark text-light position-fixed border border-2 border-black d-flex flex-column" id="playButton">
+            <i class="fa fa-arrow-circle-o-left" onclick="goBack()" title="Voltar"></i>
+            <br>
+            <i class="fa fa-play" onclick="speak()" title="Ler página"></i>
+        </button>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+        <br><br>
+        
+        <div class="d-flex justify-content-center">
+            <div class="container rounded p-3 mx-2 mt-2 bg-dark text-center lh-lg banner">
+
+                <hr>
+                <div class="d-flex justify-content-center">
+                    <h2>&nbsp;⚛️ Sobre os elementos químicos ⚛️&nbsp;</h2>
+                </div>
+
+
+                <div class="d-flex justify-content-center">
+                    <p>
+                        <a href="#resumo" title="Elemento químico - Brasil Escola">🎬 Resumo e vídeo sobre elementos 🎬</a>
+                    </p>
+                </div>
+
+
+                <hr>
+                <br>
+                
+                <div class="d-flex justify-content-center">
+                    <h2>&bull; O Que são os elementos &bull;</h2>
+                </div>
+                <ul>
+                    <hr>
+                    <li>
+                        <b>Definição:</b>
+                        <br> 
+                        Substâncias puras formadas por <a href="/Terminologias/A/atomos.html">átomos</a> de um único tipo.
+                    </li>
+                    <hr>
+
+                    <li>
+                        <b>Número Atômico:</b>
+                        <br> 
+                        Determinados pela quantidade de prótons no núcleo do átomo.
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <b>Propriedades:</b>
+                        <br> 
+                        Cada elemento possui características específicas, como:
+                    </li>   
+                    
+                    <hr>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-between">
+                            <ul class="w-50">
+                                <hr>
+                                <li>Ponto de <a href="/Terminologias/F/fusao.html">fusão</a></li>
+                                <hr>
+                                <li>Ponto de ebulição/vaporização</li>
+                                <hr>
+                                <li>Densidade</li>
+                                <hr>
+                            </ul>
+                            <a href="/IMG/processos-elementos.png" target="_blank"><img src="/IMG/processos-elementos.png" alt="..."></a>
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <li>
+                        <b>Organização:</b>
+                        <br> Dispostos na Tabela Periódica com base em suas propriedades e classificações (metais, não metais, gases nobres, etc.).
+                    </li>
+                    
+                    <hr>
+
+                    <li>
+                        <b>Importância:</b>
+                        <br>
+                        Constituem os blocos fundamentais da matéria, formando <a href="/Terminologias/M/moleculas.html">moléculas</a>, <a href="/Terminologias/C/compostos.html">compostos</a> e misturas.
+                    </li>
+                    
+                    <hr>
+
+                    <div class="d-flex justify-content-center">
+                        <div id="ElementosExemplo">
+                            <a href="/IMG/elementos-quimicos.png" target="_blank"><img src="/IMG/elementos-quimicos.png" alt="..." title="ElementosExemplo"></a>
+                        </div>
+                    </div>
+
+                </ul>
+
+                <br>
+                <hr>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <h2 id="resumo">Resumo</h2>
+                </div>
+                <p id="resumoTexto">
+                    Elementos químicos são substâncias puras compostas por átomos de um único tipo, definidos pelo número de prótons em seus núcleos. Cada elemento possui propriedades específicas, como ponto de fusão, ponto de ebulição e densidade, que determinam seu comportamento. Eles são organizados na Tabela Periódica conforme suas características e formam a base de todas as substâncias conhecidas no universo.
+                </p>
+
+                <br>
+                <hr>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <span><a href="https://www.youtube.com/watch?v=PZokPawl0Bs&" target="_blank"><i class="fa fa-youtube-play"></i> Os Elementos Químicos:</a></span>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <iframe class="video" width="1310" height="493" src="https://www.youtube.com/embed/PZokPawl0Bs" title="Elemento químico - Brasil Escola" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <br>
+                <hr>
+                <br>
+                
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <br><br><br><br>
+
+        <footer class="text-light fst-italic font-monospace fw-bold" id="main-footer">
+
+            <div class="d-flex justify-content-between text-center fw-bold">
+                <div class="d-flex justify-content-center">
+                    <img src="/IMG/etec.png" alt="..." title="Etec Escola Técnica Estadual" class="mt-2" style="height: 14vh;">
+                    <img src="/IMG/cps-logo.png" alt="..." title="Etec Escola Técnica Estadual" style="height: 14vh;">
+                </div>
+                <p>Dicionário Bibliográfrico <br> Terminologia Química</p>
+            </div>
+
+            <span class="d-flex justify-content-between">
+
+                <div class="text-center mt-3 mx-3" style="width: 15%;">
+                    <p>
+                        O conteúdo deste site pode ser utilizado para todos os fins não comerciais, respeitados e reservados
+                        os direitos morais dos autores.
+                    </p>
+                </div>
+
+                <ul class="mx-3" id="footer-ul">
+                    <li>
+                         <a href="/JS/fale-conosco.html" title="Fale Conosco">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a href="/JS/politica-de-privacidade.html" title="Política de Privacidade">Política de Privacidade</a>
+                    </li>
+                </ul>
+
+            </span>
+
+            <div class="text-center">
+
+                <h3>Desenvolvido por:</h3>
+
+                <p>
+                    <b>&copy; Kauã Padin</b>
+                    <br>
+                    <b>&copy; Kainã Igor</b>
+                </p>
+                
+            </div>
+
+        </footer>
+
+
+        <script src="/JS/script.js"></script>
+    </body>
+</html>
