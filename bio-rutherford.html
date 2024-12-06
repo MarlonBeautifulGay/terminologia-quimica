@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="/CSS/main.css">
+        <link rel="icon" href="/IMG/AtomoIcon.png">
+        <script src="https://kit.fontawesome.com/c7d652bcba.js" crossorigin="anonymous"></script>
+        <title>Sobre Ernest Rutherford</title>
+    </head>
+    <body class="bg-dark">
+        
+        <header class="fw-bold overflow-auto d-flex justify-content-between sticky-top" style="height: 10vh;" id="main-header">
+
+            <div>
+                <a href="/JS/index.html">
+                    <img src="/IMG/AtomoIcon.png" alt="..." title="Início" class="shadow-lg h-100" id="Atomo">
+                </a>
+                <h2 class="mx-3 d-inline fst-italic">
+                    TERMINOLOGIA QUÍMICA 
+                </h2>
+            </div>
+
+            <div id="top-nav" style="float: right;">
+
+                <a href="/JS/index.html" title="Início">Início</a>
+                <a href="/JS/sobre-dicionario.html" title="Sobre o Dicionário">Sobre o Dicionário</a>
+                <a href="/JS/pesquisa.html" title="Pesquisa">Pesquisa</a>
+                <a href="/JS/fale-conosco.html" title="Fale Conosco">Fale Conosco</a>
+                <a href="tabela-periodica.html" title="Tabéla Periódica">
+                    <i class="fa fa-atom me-2"></i>
+                </a>
+
+            </div>
+
+        </header>
+
+        <button class="btn bg-dark text-light position-fixed border border-2 border-black d-flex flex-column" id="playButton">
+            <i class="fa fa-arrow-circle-o-left" onclick="goBack()" title="Voltar"></i>
+            <br>
+            <i class="fa fa-play" onclick="speak()" title="Ler página"></i>
+        </button>
+        
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+        <br><br>
+        
+        <div class="d-flex justify-content-center">
+            <div class="container rounded p-3 mx-2 mt-2 bg-dark text-center lh-lg banner">
+
+                <hr>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <h2>⚛️ Quem era Ernest Rutherford (1871-1937) ⚛️</h2>
+                </div>
+
+
+                <br>
+                <hr>
+                <br>
+                
+                <div class="d-flex justify-content-evenly">
+                    <p id="resumoTexto">
+                        <img src="/IMG/Rutherford.png" class="card-img-top m-3" alt="..." title="Ernest Rutherford" style="max-height: 65vh;">
+                        <b>Ernest Rutherford, o 1º Barão Rutherford de Nelson, OM, PC, PRS (Brightwater, Nova Zelândia, 30 de agosto de 1871 — Cambridge, 19 de outubro de 1937)</b>, foi um físico e químico neozelandês naturalizado britânico, que se tornou conhecido como o <b>pai da física nuclear</b>. Em um trabalho no começo da carreira, descobriu o conceito de meia-vida radioativa, provou que a radioatividade causa a transmutação de um <a href="/Terminologias/E/elementos.html">elemento</a> químico em outro, e também distinguiu e nomeou as radiações alfa e beta. Foi premiado com o <b>Nobel de Química em 1908</b> "por suas investigações sobre a desintegração dos elementos e a química das substâncias radioativas".
+                        <br><br>
+                        Rutherford foi o primeiro cientista a propor que <b>era possível usar a radioatividade para datação de rochas e em 1905</b> suas contribuições deram origem às <b>técnicas de datação de materiais</b>. E a genialidade foi a ideia de determinar a meia-vida de substâncias, e assim sua idade precisa. <b>Meia-vida é o tempo necessário para metade de dada quantidade de material radioativo decair</b>. A meia-vida de um material é bem determinada e não depende de condições físicas como pressão ou temperatura. Mais tarde, como resultado da datação radiométrica, geólogos, físicos e astrônomos concordaram que a Terra tinha idade na ordem bilhões de anos, bem próxima da estimativa atual que é 4,5 bilhões de anos.
+                        <br><br>
+                        Rutherford realizou sua obra mais famosa <b>após ter recebido esse prêmio. Em 1911</b>, ele defendeu que os <a href="/Terminologias/A/atomos.html">átomos</a> <b>têm sua carga positiva concentrada em um pequeno núcleo</b>, e, desse modo, <b>criou o modelo atômico de Rutherford</b>, ou modelo planetário do átomo, através de sua descoberta e interpretação da <b>dispersão de Rutherford em seu experimento da folha de ouro</b>. A ele é amplamente creditada a primeira divisão do átomo, em 1917, liderando a primeira experiência de "dividir o núcleo" de uma forma controlada por dois alunos sob sua direção, <b>John Cockcroft</b> e <b>Ernest Walton</b>.
+                        <br><br>
+                        <b>Fontes: <br> <a href="https://pt.wikipedia.org/wiki/Ernest_Rutherford" title="Wikipedia Rutherford" target="_blank">
+                            <i class="fa fa-wikipedia-w"></i>
+                            https://pt.wikipedia.org/wiki/Ernest_Rutherford
+                        </a></b>
+                    </p>
+                </div>                
+                    
+                
+                <br>
+                
+                <br>
+                
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <br><br><br><br>
+
+        <footer class="text-light fst-italic font-monospace fw-bold" id="main-footer">
+
+            <div class="d-flex justify-content-between text-center fw-bold">
+                <div class="d-flex justify-content-center">
+                    <img src="/IMG/etec.png" alt="..." title="Etec Escola Técnica Estadual" class="mt-2" style="height: 14vh;">
+                    <img src="/IMG/cps-logo.png" alt="..." title="Etec Escola Técnica Estadual" style="height: 14vh;">
+                </div>
+                <p>Dicionário Bibliográfrico <br> Terminologia Química</p>
+            </div>
+
+            <span class="d-flex justify-content-between">
+
+                <div class="text-center mt-3 mx-3" style="width: 15%;">
+                    <p>
+                        O conteúdo deste site pode ser utilizado para todos os fins não comerciais, respeitados e reservados
+                        os direitos morais dos autores.
+                    </p>
+                </div>
+
+                <ul class="mx-3" id="footer-ul">
+                    <li>
+                         <a href="/JS/fale-conosco.html" title="Fale Conosco">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a href="/JS/politica-de-privacidade.html" title="Política de Privacidade">Política de Privacidade</a>
+                    </li>
+                </ul>
+
+            </span>
+
+            <div class="text-center">
+
+                <h3>Desenvolvido por:</h3>
+
+                <p>
+                    <b>&copy; Kauã Padin</b>
+                    <br>
+                    <b>&copy; Kainã Igor</b>
+                </p>
+                
+            </div>
+
+        </footer>
+
+
+        <script src="/JS/script.js"></script>
+    </body>
+</html>

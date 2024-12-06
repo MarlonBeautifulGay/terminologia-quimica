@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="/CSS/main.css">
+        <link rel="icon" href="/IMG/AtomoIcon.png">
+        <script src="https://kit.fontawesome.com/c7d652bcba.js" crossorigin="anonymous"></script>
+        <title>Sobre James Chadwick</title>
+    </head>
+    <body class="bg-dark">
+        
+        <header class="fw-bold overflow-auto d-flex justify-content-between sticky-top" style="height: 10vh;" id="main-header">
+
+            <div>
+                <a href="/JS/index.html">
+                    <img src="/IMG/AtomoIcon.png" alt="..." title="Início" class="shadow-lg h-100" id="Atomo">
+                </a>
+                <h2 class="mx-3 d-inline fst-italic">
+                    TERMINOLOGIA QUÍMICA 
+                </h2>
+            </div>
+
+            <div id="top-nav" style="float: right;">
+
+                <a href="/JS/index.html" title="Início">Início</a>
+                <a href="/JS/sobre-dicionario.html" title="Sobre o Dicionário">Sobre o Dicionário</a>
+                <a href="/JS/pesquisa.html" title="Pesquisa">Pesquisa</a>
+                <a href="/JS/fale-conosco.html" title="Fale Conosco">Fale Conosco</a>
+                <a href="tabela-periodica.html" title="Tabéla Periódica">
+                    <i class="fa fa-atom me-2"></i>
+                </a>
+                
+            </div>
+
+        </header>
+
+        <button class="btn bg-dark text-light position-fixed border border-2 border-black d-flex flex-column" id="playButton">
+            <i class="fa fa-arrow-circle-o-left" onclick="goBack()" title="Voltar"></i>
+            <br>
+            <i class="fa fa-play" onclick="speak()" title="Ler página"></i>
+        </button>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+        <br><br>
+        
+        <div class="d-flex justify-content-center">
+            <div class="container rounded p-3 mx-2 mt-2 bg-dark text-center lh-lg banner">
+
+                <hr>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <h2>⚛️ Quem era James Chadwick (1891-1974) ⚛️</h2>
+                </div>
+
+
+                <br>
+                <hr>
+                <br>
+                
+                <div class="d-flex justify-content-evenly">
+                    <p id="resumoTexto">
+                        <img src="/IMG/Chadwick.jpg" class="card-img-top m-3" alt="..." title="James Chadwick" style="max-height: 65vh;">
+                        <b>James Chadwick (Cheshire, 20 de outubro de 1891 — Cambridge, 24 de julho de 1974)</b> foi um físico britânico, colaborador de <a href="bio-rutherford.html">Ernest Rutherford</a>.
+                        <br><br>
+                        <b>Seu principal contributo para a ciência foi a prova da existência do nêutron.</b> Por esta descoberta, foi-lhe atribuído o <b>Nobel de Física em 1935.</b>
+                        <br><br>
+                        Chadwick tornou-se professor de física na <b>Universidade de Liverpool em 1935</b> e, durante a Segunda Guerra Mundial, integrou o <b>Projeto Manhattan</b> nos Estados Unidos, desenvolvendo as bombas atômicas lançadas sobre Hiroshima e Nagasaki.
+                        <br><br>
+                        Ingressou na <b>Victoria University of Manchester em 1908</b> para estudar física, colaborando com Ernest Rutherford no estudo da emissão de raios gama. Em 1913, foi para a <b>Universidade Técnica de Berlim</b>, onde trabalhou com o físico alemão <b>Hans Geiger</b>, inventor do contador de radiação com o mesmo nome. Após a guerra, regressou ao Reino Unido e tornou-se professor do <b>Gonville</b> and <b>Caius College</b>, onde retomou as suas investigações no campo da radioactividade. No <b>Laboratório Cavendish</b>, em Cambridge, colaborou com Rutherford <b>(que tinha observado experimentalmente a primeira reação nuclear em 1919)</b> e com ele produziu a desintegração artificial de diversos <a href="/Terminologias/E/elementos.html">elementos</a>, utilizando o bombardeamento com partículas alfa.
+                        <br><br>
+                        <b>Fontes: <br> <a href="https://pt.wikipedia.org/wiki/James_Chadwick" title="Wikipedia Chadwick" target="_blank">
+                            <i class="fa fa-wikipedia-w"></i>
+                            https://pt.wikipedia.org/wiki/James_Chadwick
+                        </a></b>
+                    </p>
+                    
+                </div>                
+                    
+                
+                <br>
+                
+                <br>
+                
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <br><br><br><br>
+
+        <footer class="text-light fst-italic font-monospace fw-bold" id="main-footer">
+
+            <div class="d-flex justify-content-between text-center fw-bold">
+                <div class="d-flex justify-content-center">
+                    <img src="/IMG/etec.png" alt="..." title="Etec Escola Técnica Estadual" class="mt-2" style="height: 14vh;">
+                    <img src="/IMG/cps-logo.png" alt="..." title="Etec Escola Técnica Estadual" style="height: 14vh;">
+                </div>
+                <p>Dicionário Bibliográfrico <br> Terminologia Química</p>
+            </div>
+
+            <span class="d-flex justify-content-between">
+
+                <div class="text-center mt-3 mx-3" style="width: 15%;">
+                    <p>
+                        O conteúdo deste site pode ser utilizado para todos os fins não comerciais, respeitados e reservados
+                        os direitos morais dos autores.
+                    </p>
+                </div>
+
+                <ul class="mx-3" id="footer-ul">
+                    <li>
+                         <a href="/JS/fale-conosco.html" title="Fale Conosco">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a href="/JS/politica-de-privacidade.html" title="Política de Privacidade">Política de Privacidade</a>
+                    </li>
+                </ul>
+
+            </span>
+
+            <div class="text-center">
+
+                <h3>Desenvolvido por:</h3>
+
+                <p>
+                    <b>&copy; Kauã Padin</b>
+                    <br>
+                    <b>&copy; Kainã Igor</b>
+                </p>
+                
+            </div>
+
+        </footer>
+
+        <script src="/JS/script.js"></script>
+    </body>
+</html>
