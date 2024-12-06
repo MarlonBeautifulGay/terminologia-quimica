@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="icon" href="/IMG/AtomoIcon.png"> 
+        <link rel="stylesheet" href="/CSS/main.css">
+        <script src="https://kit.fontawesome.com/c7d652bcba.js" crossorigin="anonymous"></script>
+        <title>Pesquisa (Z)</title>
+    </head>
+    <body class="bg-dark">
+
+        <!--Cabeçalho da Página-->
+        <header class="fw-bold overflow-auto d-flex justify-content-between sticky-top" style="height: 10vh;" id="main-header">
+            <div>
+                <a href="/JS/index.html">
+                    <img src="/IMG/AtomoIcon.png" alt="..." title="Início" class="shadow-lg h-100" id="Atomo">
+                </a>
+                <h2 class="mx-3 d-inline fst-italic">
+                    TERMINOLOGIA QUÍMICA 
+                </h2>
+            </div>
+
+
+            <div id="top-nav" >
+
+                <a href="/JS/index.html" title="Início">Início</a>
+                <a href="/JS/sobre-dicionario.html" title="Sobre o Dicionário">Sobre o Dicionário</a>
+                <a href="/JS/pesquisa.html" title="Pesquisa" id="active-page">Pesquisa</a>
+                <a href="/JS/fale-conosco.html" title="Fale Conosco">Fale Conosco</a>
+                <a href="tabela-periodica.html" title="Tabéla Periódica">
+                    <i class="fa fa-atom me-2"></i>
+                </a>
+                
+            </div>
+
+        </header>
+
+        <button class="btn bg-dark text-light position-fixed border border-2 border-black d-flex flex-column" id="playButton">
+            <i class="fa fa-arrow-circle-o-left" onclick="goBack()" title="Voltar"></i>
+        </button>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+        <h1 id="header-pesquisa">- Terminologias -</h1>
+        <br><br>
+
+        <!--Principal-->
+        <div class="mx-2">
+            <br>
+
+            <div class="d-flex justify-content-center">
+                <input type="search" class="search font-monospace fw-bold p-2 text-dark" id="searchBar">
+                <button type="submit" id="search_icon"><i class="fa fa-search"></i></button>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <nav class="p-2 overflow-auto text-center" id="navBar">
+                    <a href="/JS/pesquisa.html">Todos</a>
+                    <a href="/Alfabeto/A.html">A</a>
+                    <a href="/Alfabeto/B.html">B</a>
+                    <a href="/Alfabeto/C.html">C</a>
+                    <a href="/Alfabeto/D.html">D</a>
+                    <a href="/Alfabeto/E.html">E</a>
+                    <a href="/Alfabeto/F.html">F</a>
+                    <a href="/Alfabeto/G.html">G</a>
+                    <a href="/Alfabeto/H.html">H</a>
+                    <a href="/Alfabeto/I.html">I</a>
+                    <a href="/Alfabeto/J.html">J</a>
+                    <a href="/Alfabeto/K.html">K</a>
+                    <a href="/Alfabeto/L.html">L</a>
+                    <a href="/Alfabeto/M.html">M</a>
+                    <a href="/Alfabeto/N.html">N</a>
+                    <a href="/Alfabeto/O.html">O</a>
+                    <a href="/Alfabeto/P.html">P</a>
+                    <a href="/Alfabeto/Q.html">Q</a>
+                    <a href="/Alfabeto/R.html">R</a>
+                    <a href="/Alfabeto/S.html">S</a>
+                    <a href="/Alfabeto/T.html">T</a>
+                    <a href="/Alfabeto/U.html">U</a>
+                    <a href="/Alfabeto/V.html">V</a>
+                    <a href="/Alfabeto/W.html">W</a>
+                    <a href="/Alfabeto/X.html">X</a>
+                    <a href="/Alfabeto/Y.html">Y</a>
+                    <a href="/Alfabeto/Z.html" id="active-page">Z</a>
+                </nav>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <br><br>
+        <br><br>
+
+        <div class="d-flex justify-content-around pesquisa text-center">
+            <div class="card mx-2 mt-4 w-18 shadow-lg bg-dark text-light">
+                <div class="card-body">
+                    
+                    <div class="card-title d-flex justify-content-center">
+                        <a href="/Alfabeto/Z.html">
+                            <h2>
+                                Z
+                            </h2>
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="card-text d-flex justify-content-center flex-column">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+
+        <!--Fim da Página-->
+        <footer class="fst-italic font-monospace fw-bold" id="main-footer">
+
+            <div class="d-flex justify-content-between text-center fw-bold">
+                <div class="d-flex justify-content-center">
+                    <img src="/IMG/etec.png" alt="..." title="Etec Escola Técnica Estadual" class="mt-2" style="height: 14vh;">
+                    <img src="/IMG/cps-logo.png" alt="..." title="Etec Escola Técnica Estadual" style="height: 14vh;">
+                </div>
+                <p>Dicionário Bibliográfrico <br> Terminologia Química</p>
+            </div>
+
+            <span class="d-flex justify-content-between">
+
+                <div class="text-center mt-3 mx-3" style="width: 20%;">
+                    <p>
+                        O conteúdo deste site pode ser utilizado para todos os fins não comerciais, respeitados e reservados
+                        os direitos morais dos autores.
+                    </p>
+                </div>
+
+                <ul class="mx-3" id="footer-ul">
+                    <li>
+                         <a href="/JS/fale-conosco.html" title="Fale Conosco">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a href="/JS/politica-de-privacidade.html" title="Política de Privacidade">Política de Privacidade</a>
+                    </li>
+                </ul>
+
+            </span>
+
+            <div class="text-center">
+
+                <h3>Desenvolvido por:</h3>
+
+                <p>
+                    <b>&copy; Kauã Padin</b>
+                    <br>
+                    <b>&copy; Kainã Igor</b>
+                </p>
+                
+            </div>
+
+        </footer>
+
+
+        <script src="/JS/script.js"></script>
+    </body> 
+</html>
